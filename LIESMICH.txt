@@ -1,0 +1,14 @@
+Dieses Verzeichnis ist die OEFFENTLICHE Rechtsseite fuer
+ajclaritysystems.com. Es gehoert in ein eigenes, oeffentliches GitHub-Repo.
+
+Hier liegt NUR die fertige HTML-Seite. Kein Quelltext der App, keine
+legal.ts, kein Erzeuger - der Quelltext bleibt im privaten Repo.
+
+Erzeugt wird der Inhalt mit:
+
+    cd ../mood-journal
+    npm run legal
+
+Danach die drei Dateien wieder herkopieren, committen, pushen. Die Texte
+NIEMALS hier von Hand aendern - sie stehen in mood-journal/legal.ts, und ein
+Test prueft, dass App und Webseite dasselbe sagen.

@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Grato Journal – Datenschutz, Impressum, Nutzungsbedingungen</title>
+<meta name="description" content="Datenschutzerklärung, Impressum und Nutzungsbedingungen der App Grato Journal.">
+<!-- Diese Seite wird erzeugt. Nicht von Hand aendern - sonst laeuft sie mit
+     der App auseinander. Quelle: legal.ts, Werkzeug: npm run legal -->
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #ffffff;
+    --card: #f6f7f5;
+    --text: #1c2419;
+    --soft: #5a6a56;
+    --line: #e1e8dd;
+    --accent: #3d6b46;
+    --warn-bg: #fdf3e7;
+    --warn-line: #c9772a;
+    --warn-text: #7a4512;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #14180f;
+      --card: #1d2318;
+      --text: #e8eee4;
+      --soft: #9fb098;
+      --line: #2d3626;
+      --accent: #8fc39a;
+      --warn-bg: #2d2113;
+      --warn-line: #c9772a;
+      --warn-text: #e8b982;
+    }
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    padding: 0 20px 80px;
+    background: var(--bg);
+    color: var(--text);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  main { max-width: 46rem; margin: 0 auto; }
+
+  header {
+    padding: 48px 0 20px;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 28px;
+  }
+  h1 { font-size: 1.6rem; margin: 0 0 6px; }
+  .subtitle { color: var(--soft); margin: 0; font-size: 0.95rem; }
+
+  .switch { margin-top: 22px; display: flex; gap: 8px; }
+  .switch button {
+    font: inherit;
+    font-size: 0.9rem;
+    padding: 7px 15px;
+    border-radius: 999px;
+    border: 1px solid var(--line);
+    background: var(--card);
+    color: var(--text);
+    cursor: pointer;
+  }
+  .switch button[aria-pressed="true"] {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: var(--bg);
+    font-weight: 600;
+  }
+
+  .intro { color: var(--soft); font-size: 0.95rem; margin: 0 0 22px; }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding-bottom: 26px;
+    margin-bottom: 8px;
+    border-bottom: 1px solid var(--line);
+  }
+  nav a {
+    font-size: 0.9rem;
+    padding: 6px 13px;
+    border-radius: 999px;
+    border: 1px solid var(--line);
+    background: var(--card);
+    color: var(--accent);
+    text-decoration: none;
+  }
+  nav a:hover { border-color: var(--accent); }
+
+  section { padding-top: 28px; }
+  h2 { font-size: 1.3rem; margin: 0 0 4px; scroll-margin-top: 20px; }
+  h3 { font-size: 1rem; margin: 26px 0 4px; }
+  p { margin: 0 0 12px; }
+  .updated { color: var(--soft); font-size: 0.85rem; margin-bottom: 18px; }
+
+  .draft {
+    max-width: 46rem;
+    margin: 24px auto 0;
+    padding: 14px 16px;
+    border: 2px solid var(--warn-line);
+    background: var(--warn-bg);
+    color: var(--warn-text);
+    border-radius: 10px;
+    font-size: 0.95rem;
+  }
+  code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: 0.9em;
+    background: var(--card);
+    padding: 1px 5px;
+    border-radius: 4px;
+  }
+
+  footer {
+    margin-top: 56px;
+    padding-top: 20px;
+    border-top: 1px solid var(--line);
+    color: var(--soft);
+    font-size: 0.85rem;
+  }
+
+  /* Ohne JavaScript sind BEIDE Sprachen sichtbar. Das ist unschoen, aber
+     lesbar - und lesbar ist bei einer Datenschutzerklaerung das Wichtigere.
+     Erst das Skript unten blendet eine aus. */
+  .js .lang[hidden] { display: none; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Grato Journal</h1>
+    <p class="subtitle">Datenschutz · Impressum · Nutzungsbedingungen · Lizenzen</p>
+    <div class="switch" role="group" aria-label="Sprache / Language">
+      <button type="button" data-set="de" aria-pressed="true">Deutsch</button>
+      <button type="button" data-set="en" aria-pressed="false">English</button>
+    </div>
+  </header>
+
+  <div class="lang" data-lang="de" lang="de">
+    <p class="intro">Alles bleibt auf deinem Handy. Es wird nichts übertragen.</p>
+    <nav>
+        <a href="#privacy-de">Datenschutz</a>
+        <a href="#imprint-de">Impressum</a>
+        <a href="#terms-de">Nutzungsbedingungen</a>
+        <a href="#licenses-de">Verwendete Software</a>
+    </nav>
+    <section id="privacy-de">
+      <h2>Datenschutz</h2>
+      <p class="updated">Stand 2026-08-30</p>
+      <h3>Die kurze Fassung</h3>
+      <p>Diese App hat kein Nutzerkonto, keinen Server und keine eigene Internetverbindung. Alles, was du schreibst, bleibt auf diesem Handy. Es wird nichts übertragen, nichts ausgewertet und nichts weitergegeben.</p>
+      <h3>Was gespeichert wird, und wo</h3>
+      <p>Deine Einträge (Stimmung, Dankbarkeits-Zeilen, dein Text über den Tag), deine Manifestationen, deine Challenge-Antworten, deine Einstellungen und die Bilder, die du dem Vision Board hinzufügst. Alles liegt im privaten Speicherbereich der App auf diesem Gerät, den andere Apps nicht lesen können.</p>
+      <h3>Bilder</h3>
+      <p>Wenn du ein Bild hinzufügst, fragt die App das System nach Zugriff auf deine Fotos. Das gewählte Bild wird in den eigenen Ordner der App kopiert und verkleinert. Das Original bleibt unberührt. Die App liest deine Fotos niemals von sich aus.</p>
+      <h3>Kein Tracking, keine Werbung</h3>
+      <p>Es gibt keine Nutzungsanalyse, keine Absturzberichte, keine Werbung und kein fremdes Baukastensystem, das Daten irgendwohin senden würde. Über dich wird kein Profil angelegt.</p>
+      <h3>Käufe</h3>
+      <p>Wenn du das Pro-Abo abschließt, wickelt Google Play den Kauf ab, nicht diese App. Google erhält die für den Kauf nötigen Daten und verarbeitet sie nach seiner eigenen Datenschutzerklärung. Diese App erfährt nur, ob ein aktives Abo besteht - nicht, wer du bist, und keine Zahlungsdaten.</p>
+      <h3>Teilen und Export</h3>
+      <p>Wenn du einen Meilenstein teilst oder dein Vision Board exportierst, entscheidest du im System-Dialog, wohin es geht. Erst dann verlässt etwas die App, und zwar nur das, was du ausgewählt hast. Was die empfangende App damit macht, liegt außerhalb unserer Reichweite.</p>
+      <h3>Deine Daten löschen</h3>
+      <p>Wenn du die App deinstallierst, wird alles Gespeicherte entfernt. Du kannst die Daten der App auch in den Android-Einstellungen unter Apps löschen. Da nie etwas übertragen wurde, liegt anderswo nichts, das wir löschen könnten.</p>
+      <h3>Deine Rechte</h3>
+      <p>Nach der DSGVO hast du Recht auf Auskunft, Berichtigung, Löschung, Einschränkung, Datenübertragbarkeit und Widerspruch. Da wir keine Daten über dich haben, gibt es auf unserer Seite praktisch nichts zu beauskunften oder zu löschen - deine Daten liegen bei dir, auf deinem Gerät. Bei Fragen schreib an die Adresse im Impressum.</p>
+    </section>
+
+    <section id="imprint-de">
+      <h2>Impressum</h2>
+      <p class="updated">Stand 2026-08-30</p>
+      <h3>Anbieter und Verantwortlicher</h3>
+      <p>AJ Clarity Systems<br>Inhaber: Alexander Jentzsch<br>Mühlbauerweg 15<br>09128 Chemnitz<br>Deutschland</p>
+      <h3>Kontakt</h3>
+      <p>E-Mail: kontakt@ajclaritysystems.com</p>
+      <h3>Umsatzsteuer-Identifikationsnummer</h3>
+      <p>Nicht vorhanden (Kleinunternehmer nach § 19 UStG).</p>
+      <h3>Online-Streitbeilegung</h3>
+      <p>Wir sind nicht verpflichtet und nicht bereit, an einem Streitbeilegungs- verfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
+    </section>
+
+    <section id="terms-de">
+      <h2>Nutzungsbedingungen</h2>
+      <p class="updated">Stand 2026-08-30</p>
+      <h3>Was diese App ist</h3>
+      <p>Ein privates Journal für Stimmung, Dankbarkeit und kleine tägliche Übungen. Es läuft vollständig auf deinem Gerät. Es gibt kein Konto und keine Gemeinschaft - niemand sonst sieht, was du schreibst.</p>
+      <h3>Keine medizinische Beratung</h3>
+      <p>Diese App ist kein Medizinprodukt und leistet keine Diagnose, Therapie oder Behandlung. Die Affirmationen, Fragen und Auswertungen sollen zum Nachdenken anregen, mehr nicht. Wenn es dir über längere Zeit schlecht geht, sprich bitte mit einer Ärztin, einem Arzt oder einer Therapeutin. In einer akuten Krise wende dich an den Notruf oder an eine Telefonseelsorge - dabei kann diese App dir nicht helfen.</p>
+      <h3>Deine Daten liegen bei dir</h3>
+      <p>Weil alles auf deinem Gerät bleibt, gibt es bei uns keine Sicherung. Wenn du das Handy verlierst, es zurücksetzt oder die App deinstallierst, sind die Einträge weg. Das ist der Preis einer App, die nichts überträgt.</p>
+      <h3>Pro-Abo</h3>
+      <p>Pro schaltet die tiefere Auswertung, den Vision-Board-Export, eigene Affirmationen und alle Challenges sofort frei. Es ist ein Abo, das sich jährlich verlängert, bis du kündigst. Der genaue Preis, der Testzeitraum und das Verlängerungsdatum werden dir von Google Play vor dem Bestätigen angezeigt. Verwalten und kündigen kannst du das Abo im Google Play Store unter Zahlungen und Abos - nicht in dieser App.</p>
+      <h3>Kündigung und Widerruf</h3>
+      <p>Du kannst jederzeit zum Ende des laufenden Abrechnungszeitraums kündigen. Der Vertrag über den Kauf selbst kommt mit Google zustande; für Erstattungen gelten daher die Regeln von Google Play.</p>
+      <h3>Haftung</h3>
+      <p>Wir haften unbeschränkt für Vorsatz und grobe Fahrlässigkeit sowie für die Verletzung von Leben, Körper oder Gesundheit. Im Übrigen ist die Haftung auf die Verletzung wesentlicher Vertragspflichten und auf den bei dieser Art von Vertrag typischerweise vorhersehbaren Schaden begrenzt.</p>
+    </section>
+
+    <section id="licenses-de">
+      <h2>Verwendete Software</h2>
+      <p class="updated">Stand 2026-08-30</p>
+      <p>Diese App selbst ist nicht Open Source - ihr Quelltext ist nicht veröffentlicht, und alle Rechte sind vorbehalten. Sie baut aber auf fremden Bausteinen auf, die es sind. Diese werden unter der MIT-Lizenz verwendet, die das erlaubt, solange der Urheberrechtsvermerk weitergegeben wird. Genau das tut diese Seite. Die Lizenzen gelten nur für die unten genannten Bausteine.</p>
+      <h3>React und React Native</h3>
+      <p>Copyright (c) Meta Platforms, Inc. and affiliates. MIT-Lizenz.</p>
+      <h3>Expo</h3>
+      <p>Copyright (c) 650 Industries, Inc. (Expo). MIT-Lizenz.</p>
+      <h3>react-native-svg</h3>
+      <p>Copyright (c) 2015-present Horcrux. MIT-Lizenz.</p>
+      <h3>async-storage</h3>
+      <p>Copyright (c) 2015-present, Facebook, Inc. MIT-Lizenz.</p>
+      <h3>react-native-view-shot</h3>
+      <p>Copyright (c) 2015 Gaëtan Renaudeau. MIT-Lizenz.</p>
+      <h3>Die Sprüche, Fragen und Texte</h3>
+      <p>Für diese App geschrieben. Die stoischen Affirmationen sind eigene Formulierungen im Geist der Stoa, keine Zitate aus einer geschützten Übersetzung.</p>
+    </section>
+  </div>
+
+  <div class="lang" data-lang="en" lang="en">
+    <p class="intro">Everything stays on your phone. Nothing is sent anywhere.</p>
+    <nav>
+        <a href="#privacy-en">Privacy</a>
+        <a href="#imprint-en">Imprint</a>
+        <a href="#terms-en">Terms of use</a>
+        <a href="#licenses-en">Third-party software</a>
+    </nav>
+    <section id="privacy-en">
+      <h2>Privacy</h2>
+      <p class="updated">As of 2026-08-30</p>
+      <h3>The short version</h3>
+      <p>This app has no user account, no server and no internet connection of its own. Everything you write stays on this phone. Nothing is sent anywhere, nothing is analysed, nothing is passed on.</p>
+      <h3>What is stored, and where</h3>
+      <p>Your entries (mood, gratitude lines, your text about the day), your manifestations, your challenge answers, your settings and the pictures you add to the vision board. All of it lives in the app’s private storage area on this device, which other apps cannot read.</p>
+      <h3>Pictures</h3>
+      <p>When you add a picture, the app asks the system for access to your photos. The chosen picture is copied into the app’s own folder and reduced in size. The original stays untouched. The app never reads your photo library on its own.</p>
+      <h3>No tracking, no ads</h3>
+      <p>There is no analytics, no crash reporting, no advertising and no third-party software development kit that would send data anywhere. No profile about you is created.</p>
+      <h3>Purchases</h3>
+      <p>If you take out the Pro subscription, the purchase is handled by Google Play, not by this app. Google receives the data required for the transaction and processes it under its own privacy policy. This app is only told whether an active subscription exists - not who you are, and not any payment details.</p>
+      <h3>Sharing and export</h3>
+      <p>When you share a milestone or export your vision board, you decide in the system dialog where it goes. Only then does anything leave the app, and only what you selected. What the receiving app does with it is beyond our reach.</p>
+      <h3>Deleting your data</h3>
+      <p>Uninstalling the app removes everything it stored. You can also clear the app’s data in the Android settings under Apps. Because nothing was ever sent anywhere, there is nothing left elsewhere for us to delete.</p>
+      <h3>Your rights</h3>
+      <p>Under the GDPR you have the right to information, correction, deletion, restriction, data portability and objection. Since we hold no data about you, there is in practice nothing to disclose or delete on our side - your data is in your hands, on your device. For questions, write to the address in the imprint.</p>
+    </section>
+
+    <section id="imprint-en">
+      <h2>Imprint</h2>
+      <p class="updated">As of 2026-08-30</p>
+      <h3>Responsible for the content</h3>
+      <p>AJ Clarity Systems<br>Owner: Alexander Jentzsch<br>Mühlbauerweg 15<br>09128 Chemnitz<br>Deutschland</p>
+      <h3>Contact</h3>
+      <p>Email: kontakt@ajclaritysystems.com</p>
+      <h3>VAT identification number</h3>
+      <p>Not applicable (small business under § 19 UStG).</p>
+      <h3>Online dispute resolution</h3>
+      <p>We are neither obliged nor willing to take part in dispute resolution proceedings before a consumer arbitration board.</p>
+    </section>
+
+    <section id="terms-en">
+      <h2>Terms of use</h2>
+      <p class="updated">As of 2026-08-30</p>
+      <h3>What this app is</h3>
+      <p>A private journal for mood, gratitude and small daily exercises. It runs entirely on your device. There is no account and no community - nobody else sees what you write.</p>
+      <h3>Not medical advice</h3>
+      <p>This app is not a medical device and does not provide diagnosis, therapy or treatment. The affirmations, questions and evaluations are there to encourage reflection, nothing more. If you are unwell over a longer period, please talk to a doctor or a therapist. In an acute crisis, contact emergency services or a crisis line - this app cannot help you there.</p>
+      <h3>Your data is your responsibility</h3>
+      <p>Because everything stays on your device, there is no backup on our side. If you lose the phone, reset it or uninstall the app, the entries are gone. That is the price of an app that sends nothing anywhere.</p>
+      <h3>Pro subscription</h3>
+      <p>Pro unlocks the deeper insights, the vision board export, your own affirmations and all challenges straight away. It is a subscription that renews yearly until cancelled. The exact price, the trial period and the renewal date are shown by Google Play before you confirm. You manage and cancel the subscription in the Google Play Store under Payments and subscriptions - not in this app.</p>
+      <h3>Cancellation</h3>
+      <p>You can cancel at any time with effect from the end of the current billing period. The contract for the purchase itself is concluded with Google; refunds therefore follow Google Play’s rules.</p>
+      <h3>Liability</h3>
+      <p>We are liable without limitation for intent and gross negligence, and for injury to life, body or health. Otherwise liability is limited to a breach of essential contractual obligations and to the damage typically foreseeable for this kind of contract.</p>
+    </section>
+
+    <section id="licenses-en">
+      <h2>Third-party software</h2>
+      <p class="updated">As of 2026-08-30</p>
+      <p>This app itself is not open source - its source code is not published, and all rights are reserved. It does, however, build on third-party components that are. They are used under the MIT license, which permits that provided the copyright notice is passed on. That is what this page does. These licenses apply only to the components listed below.</p>
+      <h3>React and React Native</h3>
+      <p>Copyright (c) Meta Platforms, Inc. and affiliates. MIT license.</p>
+      <h3>Expo</h3>
+      <p>Copyright (c) 650 Industries, Inc. (Expo). MIT license.</p>
+      <h3>react-native-svg</h3>
+      <p>Copyright (c) 2015-present Horcrux. MIT license.</p>
+      <h3>async-storage</h3>
+      <p>Copyright (c) 2015-present, Facebook, Inc. MIT license.</p>
+      <h3>react-native-view-shot</h3>
+      <p>Copyright (c) 2015 Gaëtan Renaudeau. MIT license.</p>
+      <h3>The affirmations, questions and texts</h3>
+      <p>Written for this app. The stoic affirmations are our own wording in the spirit of the Stoa, not quotations from a protected translation.</p>
+    </section>
+  </div>
+
+  <footer>
+    <p>Diese Seite wird aus dem Quelltext der App erzeugt und enthält denselben
+      Text, der auch in der App unter Einstellungen → Rechtliches steht.</p>
+  </footer>
+</main>
+
+<script>
+  // Die Klasse setzt das Skript selbst: ohne JavaScript bleiben beide
+  // Sprachen sichtbar, statt dass eine unerreichbar verschwindet.
+  document.documentElement.classList.add('js');
+
+  var blocks = document.querySelectorAll('.lang');
+  var buttons = document.querySelectorAll('.switch button');
+
+  function show(code) {
+    blocks.forEach(function (b) { b.hidden = b.dataset.lang !== code; });
+    buttons.forEach(function (b) {
+      b.setAttribute('aria-pressed', String(b.dataset.set === code));
+    });
+    document.documentElement.lang = code;
+    try { localStorage.setItem('legal-lang', code); } catch (e) {}
+  }
+
+  buttons.forEach(function (b) {
+    b.addEventListener('click', function () { show(b.dataset.set); });
+  });
+
+  // Reihenfolge: was zuletzt gewaehlt wurde, sonst die Sprache des Browsers,
+  // sonst Deutsch.
+  var saved = null;
+  try { saved = localStorage.getItem('legal-lang'); } catch (e) {}
+  var browser = (navigator.language || 'de').slice(0, 2);
+  show(saved === 'en' || saved === 'de' ? saved : browser === 'en' ? 'en' : 'de');
+</script>
+</body>
+</html>
