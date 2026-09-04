@@ -1,0 +1,9 @@
+# Zeilenenden festnageln.
+#
+# Git stellt auf Windows sonst auf CRLF um. Bei CNAME ist das keine
+# Kosmetik: die Datei enthaelt NUR den Rechnernamen, und ein angehaengtes
+# \r kann als Teil des Namens gelesen werden - dann bindet GitHub Pages die
+# Domain nicht, ohne einen Fehler zu melden.
+* text eol=lf
+*.html text eol=lf
+CNAME text eol=lf
