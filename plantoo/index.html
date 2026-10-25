@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Plantoo – Datenschutz und Nutzungsbedingungen</title>
+<meta name="description" content="Datenschutzerklärung und Nutzungsbedingungen der App Plantoo.">
+<!-- Diese Seite wird erzeugt. Nicht von Hand aendern - sonst laeuft sie mit
+     der App auseinander. Quelle: legal.ts, Werkzeug: npm run legal -->
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #ffffff;
+    --card: #f6f7f5;
+    --text: #1c2419;
+    --soft: #5a6a56;
+    --line: #e1e8dd;
+    --accent: #3d6b46;
+    --warn-bg: #fdf3e7;
+    --warn-line: #c9772a;
+    --warn-text: #7a4512;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #14180f;
+      --card: #1d2318;
+      --text: #e8eee4;
+      --soft: #9fb098;
+      --line: #2d3626;
+      --accent: #8fc39a;
+      --warn-bg: #2d2113;
+      --warn-line: #c9772a;
+      --warn-text: #e8b982;
+    }
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    padding: 0 20px 80px;
+    background: var(--bg);
+    color: var(--text);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  main { max-width: 46rem; margin: 0 auto; }
+
+  header {
+    padding: 48px 0 20px;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 28px;
+  }
+  h1 { font-size: 1.6rem; margin: 0 0 6px; }
+  .subtitle { color: var(--soft); margin: 0; font-size: 0.95rem; }
+
+  .switch { margin-top: 22px; display: flex; gap: 8px; }
+  .switch button {
+    font: inherit;
+    font-size: 0.9rem;
+    padding: 7px 15px;
+    border-radius: 999px;
+    border: 1px solid var(--line);
+    background: var(--card);
+    color: var(--text);
+    cursor: pointer;
+  }
+  .switch button[aria-pressed="true"] {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: var(--bg);
+    font-weight: 600;
+  }
+
+  .intro { color: var(--soft); font-size: 0.95rem; margin: 0 0 22px; }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding-bottom: 26px;
+    margin-bottom: 8px;
+    border-bottom: 1px solid var(--line);
+  }
+  nav a {
+    font-size: 0.9rem;
+    padding: 6px 13px;
+    border-radius: 999px;
+    border: 1px solid var(--line);
+    background: var(--card);
+    color: var(--accent);
+    text-decoration: none;
+  }
+  nav a:hover { border-color: var(--accent); }
+
+  section { padding-top: 28px; }
+  h2 { font-size: 1.3rem; margin: 0 0 4px; scroll-margin-top: 20px; }
+  h3 { font-size: 1rem; margin: 26px 0 4px; }
+  p { margin: 0 0 12px; }
+  .updated { color: var(--soft); font-size: 0.85rem; margin-bottom: 18px; }
+
+  .draft {
+    max-width: 46rem;
+    margin: 24px auto 0;
+    padding: 14px 16px;
+    border: 2px solid var(--warn-line);
+    background: var(--warn-bg);
+    color: var(--warn-text);
+    border-radius: 10px;
+    font-size: 0.95rem;
+  }
+  code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: 0.9em;
+    background: var(--card);
+    padding: 1px 5px;
+    border-radius: 4px;
+  }
+
+  footer {
+    margin-top: 56px;
+    padding-top: 20px;
+    border-top: 1px solid var(--line);
+    color: var(--soft);
+    font-size: 0.85rem;
+  }
+
+  /* Ohne JavaScript sind BEIDE Sprachen sichtbar. Das ist unschoen, aber
+     lesbar - und lesbar ist bei einer Datenschutzerklaerung das Wichtigere.
+     Erst das Skript unten blendet eine aus. */
+  .js .lang[hidden] { display: none; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Plantoo</h1>
+    <p class="subtitle">Datenschutz · Nutzungsbedingungen · Verwendete Software</p>
+    <div class="switch" role="group" aria-label="Sprache / Language">
+      <button type="button" data-set="de" aria-pressed="true">Deutsch</button>
+      <button type="button" data-set="en" aria-pressed="false">English</button>
+    </div>
+  </header>
+
+  <div class="lang" data-lang="de" lang="de">
+    <p class="intro">Deine Pflanzen und Fotos bleiben auf deinem Handy. Es wird nichts übertragen.</p>
+    <nav>
+        <a href="#privacy-de">Datenschutz</a>
+        <a href="#terms-de">Nutzungsbedingungen</a>
+        <a href="#licenses-de">Verwendete Software</a>
+    </nav>
+    <p><a href="../#imprint-de">Impressum →</a></p>
+
+    <section id="privacy-de">
+      <h2>Datenschutz</h2>
+      <p class="updated">Stand 2026-10-25</p>
+      <h3>Die kurze Fassung</h3>
+      <p>Diese App hat kein Nutzerkonto, keinen Server und keine eigene Internetverbindung. Deine Pflanzen, Fotos und Einstellungen bleiben auf diesem Handy. Es wird nichts übertragen, nichts ausgewertet und nichts weitergegeben.</p>
+      <h3>Verantwortlich</h3>
+      <p>AJ Clarity Systems<br>Inhaber: Alexander Jentzsch<br>Mühlbauerweg 15<br>09128 Chemnitz<br>Deutschland<br>E-Mail: support@ajclaritysystems.com</p>
+      <h3>Was gespeichert wird, und wo</h3>
+      <p>Deine Pflanzen (Name, Raum, Gießabstand, die Tage, an denen du gegossen hast), deine Abzeichen und deine Einstellungen. Alles liegt im privaten Speicherbereich der App auf diesem Gerät, den andere Apps nicht lesen können.</p>
+      <h3>Kamera und Fotos</h3>
+      <p>Wenn du eine Pflanze fotografierst, fragt die App beim ersten Mal nach der Erlaubnis für die Kamera. Wenn du ein Foto aus der Galerie wählst, öffnet sich die Fotoauswahl von Android, und die App sieht nur das eine Bild, das du ausgewählt hast - deine Galerie kann sie nicht lesen. Das Bild wird in den eigenen Ordner der App kopiert und verkleinert. Es verlässt dein Handy nie. Löschst du die Pflanze, wird ihr Foto mitgelöscht.</p>
+      <h3>Erinnerungen</h3>
+      <p>Wenn du die Gieß-Erinnerung einschaltest, fragt die App nach der Erlaubnis für Benachrichtigungen. Sie werden vollständig auf deinem Handy geplant - ohne Push-Dienst und ohne Server. In einer Benachrichtigung stehen nur die Namen, die du deinen Pflanzen gegeben hast. Ausschalten kannst du sie jederzeit in der App oder in den Einstellungen deines Handys.</p>
+      <h3>Kein Tracking, keine Werbung</h3>
+      <p>Es gibt keine Nutzungsanalyse, keine Absturzberichte, keine Werbung und kein fremdes Baukastensystem, das Daten irgendwohin senden würde. Über dich wird kein Profil angelegt.</p>
+      <h3>Der Einmalkauf</h3>
+      <p>Wenn du unbegrenzt viele Pflanzen freischaltest, wickelt Google Play den Kauf ab, nicht diese App. Google erhält die für den Kauf nötigen Daten und verarbeitet sie nach seiner eigenen Datenschutzerklärung. Diese App erfährt nur, ob der Kauf besteht - nicht, wer du bist, und keine Zahlungsdaten.</p>
+      <h3>Bewertung und Einladung</h3>
+      <p>Ab und zu kann die App das Bewertungsfenster von Google Play zeigen. Ob und wie du bewertest, erfährt nur Google, diese App nicht. Wenn du einen Freund einlädst, entscheidest du im System-Dialog, wohin die Nachricht geht. Erst dann verlässt etwas die App, und zwar nur diese Nachricht.</p>
+      <h3>Deine Daten löschen</h3>
+      <p>In der App findest du unter Einstellungen den Punkt „Alle Daten löschen“. Er entfernt alle Pflanzen, alle Fotos, deine Abzeichen und deine Einstellungen von diesem Handy. Wenn du die App deinstallierst, wird ebenfalls alles entfernt. Da nie etwas übertragen wurde, liegt anderswo nichts, das wir löschen könnten.</p>
+      <h3>Deine Rechte</h3>
+      <p>Nach der DSGVO hast du Recht auf Auskunft, Berichtigung, Löschung, Einschränkung, Datenübertragbarkeit und Widerspruch sowie das Recht, dich bei einer Datenschutz-Aufsichtsbehörde zu beschweren. Da wir keine Daten über dich haben, gibt es auf unserer Seite praktisch nichts zu beauskunften oder zu löschen. Bei Fragen schreib an die Adresse oben.</p>
+    </section>
+
+    <section id="terms-de">
+      <h2>Nutzungsbedingungen</h2>
+      <p class="updated">Stand 2026-10-25</p>
+      <h3>Was diese App ist</h3>
+      <p>Ein Gießplan und Pflegeratgeber für Zimmerpflanzen. Er läuft vollständig auf deinem Gerät. Es gibt kein Konto.</p>
+      <h3>Pflegeangaben sind Richtwerte</h3>
+      <p>Gießabstände, Licht, Größe und alle anderen Pflegeangaben sind allgemeine Richtwerte. Was eine Pflanze wirklich braucht, hängt von Topf, Erde, Standort und Jahreszeit ab. Prüf vor dem Gießen die Erde. Dass eine Pflanze gedeiht, können wir nicht garantieren.</p>
+      <h3>Giftigkeit</h3>
+      <p>Die Angaben zur Giftigkeit sind sorgfältig zusammengestellt, aber ohne Gewähr, und ersetzen keine fachliche Beratung. Wenn ein Kind oder ein Tier etwas von einer Pflanze gegessen haben könnte, ruf sofort den Giftnotruf oder einen Tierarzt an - verlass dich nicht auf diese App.</p>
+      <h3>Deine Daten liegen bei dir</h3>
+      <p>Weil alles auf deinem Gerät bleibt, gibt es bei uns keine Sicherung. Wenn du das Handy verlierst, es zurücksetzt oder die App deinstallierst, sind deine Pflanzen weg.</p>
+      <h3>Der Einmalkauf</h3>
+      <p>Bis zu 3 Pflanzen sind kostenlos. Eine einmalige Zahlung schaltet unbegrenzt viele Pflanzen frei, solange die App angeboten wird. Es ist KEIN Abo: Nichts verlängert sich, nichts muss gekündigt werden. Den genauen Preis zeigt Google Play vor dem Bestätigen an. Der Kauf hängt an deinem Google-Konto und lässt sich auf einem neuen Handy wiederherstellen.</p>
+      <h3>Widerruf und Erstattung</h3>
+      <p>Der Vertrag über den Kauf kommt mit Google zustande; für Erstattungen und dein Widerrufsrecht gelten daher die Regeln von Google Play.</p>
+      <h3>Haftung</h3>
+      <p>Wir haften unbeschränkt für Vorsatz und grobe Fahrlässigkeit sowie für die Verletzung von Leben, Körper oder Gesundheit. Im Übrigen ist die Haftung auf die Verletzung wesentlicher Vertragspflichten und auf den bei dieser Art von Vertrag typischerweise vorhersehbaren Schaden begrenzt.</p>
+    </section>
+
+    <section id="licenses-de">
+      <h2>Verwendete Software</h2>
+      <p class="updated">Stand 2026-10-25</p>
+      <p>Diese App selbst ist nicht Open Source - ihr Quelltext ist nicht veröffentlicht, und alle Rechte sind vorbehalten. Sie baut auf fremden Bausteinen unter der MIT-Lizenz auf, die verlangt, dass der Urheberrechtsvermerk weitergegeben wird. Genau das tut diese Seite. Die Musterfotos der Pflanzen stehen unter Einstellungen → Bildnachweise.</p>
+      <h3>React und React Native</h3>
+      <p>Copyright (c) Meta Platforms, Inc. and affiliates. MIT-Lizenz.</p>
+      <h3>Expo</h3>
+      <p>Copyright (c) 650 Industries, Inc. (Expo). MIT-Lizenz.</p>
+      <h3>async-storage</h3>
+      <p>Copyright (c) 2015-present, Facebook, Inc.. MIT-Lizenz.</p>
+      <h3>react-native-safe-area-context</h3>
+      <p>Copyright (c) 2019 Th3rd Wave. MIT-Lizenz.</p>
+      <h3>react-native-iap</h3>
+      <p>Copyright (c) 2025 hyochan. MIT-Lizenz.</p>
+      <h3>react-native-nitro-modules</h3>
+      <p>Copyright (c) Marc Rousavy (Margelo). MIT-Lizenz.</p>
+      <h3>Pflanzentexte und Pflegeangaben</h3>
+      <p>Für diese App geschrieben und zusammengestellt, nicht aus Ratgebern abgeschrieben.</p>
+    </section>
+  </div>
+
+  <div class="lang" data-lang="en" lang="en">
+    <p class="intro">Your plants and photos stay on your phone. Nothing is sent anywhere.</p>
+    <nav>
+        <a href="#privacy-en">Privacy</a>
+        <a href="#terms-en">Terms of use</a>
+        <a href="#licenses-en">Third-party software</a>
+    </nav>
+    <p><a href="../#imprint-en">Imprint →</a></p>
+
+    <section id="privacy-en">
+      <h2>Privacy</h2>
+      <p class="updated">As of 2026-10-25</p>
+      <h3>The short version</h3>
+      <p>This app has no user account, no server and no internet connection of its own. Your plants, photos and settings stay on this phone. Nothing is sent anywhere, nothing is analysed, nothing is passed on.</p>
+      <h3>Who is responsible</h3>
+      <p>AJ Clarity Systems<br>Owner: Alexander Jentzsch<br>Mühlbauerweg 15<br>09128 Chemnitz<br>Deutschland<br>Email: support@ajclaritysystems.com</p>
+      <h3>What is stored, and where</h3>
+      <p>Your plants (name, room, watering interval, the days you watered), your achievements and your settings. All of it lives in the app’s private storage area on this device, which other apps cannot read.</p>
+      <h3>Camera and photos</h3>
+      <p>If you take a photo of a plant, the app asks the system for camera permission the first time. If you pick a photo from your gallery, Android’s own photo picker is used and the app only ever sees the one picture you chose - it cannot read your photo library. The picture is copied into the app’s own folder and reduced in size. It never leaves your phone. When you delete the plant, its photo is deleted too.</p>
+      <h3>Reminders</h3>
+      <p>If you switch on the watering reminder, the app asks for permission to show notifications. They are planned entirely on your phone - no push service, no server. A notification only contains the names you gave your plants. You can switch reminders off at any time in the app or in your phone settings.</p>
+      <h3>No tracking, no ads</h3>
+      <p>There is no analytics, no crash reporting, no advertising and no third-party software development kit that would send data anywhere. No profile about you is created.</p>
+      <h3>The one-time purchase</h3>
+      <p>If you unlock unlimited plants, Google Play handles the purchase, not this app. Google receives the data required for the transaction and processes it under its own privacy policy. This app is only told whether the purchase exists - not who you are, and no payment details.</p>
+      <h3>Ratings and invitations</h3>
+      <p>Now and then the app may show Google Play’s own rating window. Whether and what you rate goes to Google only; this app does not learn it. When you invite a friend, you decide in the system dialog where the message goes. Only then does anything leave the app, and only that message.</p>
+      <h3>Deleting your data</h3>
+      <p>In the app under Settings you will find “Delete all data”. It removes every plant, every photo, your achievements and your settings from this phone. Uninstalling the app removes everything as well. Because nothing was ever sent anywhere, there is nothing left elsewhere for us to delete.</p>
+      <h3>Your rights</h3>
+      <p>Under the GDPR you have the right to information, correction, deletion, restriction, data portability and objection, and the right to complain to a data protection authority. Since we hold no data about you, there is in practice nothing to disclose or delete on our side. For questions, write to the address above.</p>
+    </section>
+
+    <section id="terms-en">
+      <h2>Terms of use</h2>
+      <p class="updated">As of 2026-10-25</p>
+      <h3>What this app is</h3>
+      <p>A watering planner and care guide for houseplants. It runs entirely on your device. There is no account.</p>
+      <h3>Care information is a guide</h3>
+      <p>Watering intervals, light, size and all other care information are general guidelines. What a plant really needs depends on pot, soil, location and season. Check the soil before you water. We cannot guarantee that a plant thrives.</p>
+      <h3>Toxicity</h3>
+      <p>The toxicity information is compiled with care but without guarantee, and it does not replace professional advice. If a child or a pet may have eaten part of a plant, call poison control or a vet immediately - do not rely on this app.</p>
+      <h3>Your data is your responsibility</h3>
+      <p>Because everything stays on your device, there is no backup on our side. If you lose the phone, reset it or uninstall the app, your plants are gone.</p>
+      <h3>The one-time purchase</h3>
+      <p>Up to 3 plants are free. A single payment unlocks unlimited plants for as long as the app is offered. It is NOT a subscription: nothing renews and nothing needs cancelling. The exact price is shown by Google Play before you confirm. The purchase is tied to your Google account and can be restored on a new phone.</p>
+      <h3>Refunds</h3>
+      <p>The contract for the purchase is concluded with Google; refunds and your right of withdrawal therefore follow Google Play’s rules.</p>
+      <h3>Liability</h3>
+      <p>We are liable without limitation for intent and gross negligence, and for injury to life, body or health. Otherwise liability is limited to a breach of essential contractual obligations and to the damage typically foreseeable for this kind of contract.</p>
+    </section>
+
+    <section id="licenses-en">
+      <h2>Third-party software</h2>
+      <p class="updated">As of 2026-10-25</p>
+      <p>This app itself is not open source - its source code is not published, and all rights are reserved. It builds on third-party components under the MIT license, which requires passing on the copyright notice. That is what this page does. The sample plant photos are listed under Settings → Image credits.</p>
+      <h3>React and React Native</h3>
+      <p>Copyright (c) Meta Platforms, Inc. and affiliates. MIT license.</p>
+      <h3>Expo</h3>
+      <p>Copyright (c) 650 Industries, Inc. (Expo). MIT license.</p>
+      <h3>async-storage</h3>
+      <p>Copyright (c) 2015-present, Facebook, Inc.. MIT license.</p>
+      <h3>react-native-safe-area-context</h3>
+      <p>Copyright (c) 2019 Th3rd Wave. MIT license.</p>
+      <h3>react-native-iap</h3>
+      <p>Copyright (c) 2025 hyochan. MIT license.</p>
+      <h3>react-native-nitro-modules</h3>
+      <p>Copyright (c) Marc Rousavy (Margelo). MIT license.</p>
+      <h3>Plant texts and care information</h3>
+      <p>Written and compiled for this app, not copied from guidebooks.</p>
+    </section>
+  </div>
+
+  <footer>
+    <p>Diese Seite wird aus dem Quelltext der App erzeugt und enthält denselben
+      Text, der auch in der App unter Einstellungen → Rechtliches steht.</p>
+  </footer>
+</main>
+
+<script>
+  // Die Klasse setzt das Skript selbst: ohne JavaScript bleiben beide
+  // Sprachen sichtbar, statt dass eine unerreichbar verschwindet.
+  document.documentElement.classList.add('js');
+
+  var blocks = document.querySelectorAll('.lang');
+  var buttons = document.querySelectorAll('.switch button');
+
+  function show(code) {
+    blocks.forEach(function (b) { b.hidden = b.dataset.lang !== code; });
+    buttons.forEach(function (b) {
+      b.setAttribute('aria-pressed', String(b.dataset.set === code));
+    });
+    document.documentElement.lang = code;
+    try { localStorage.setItem('legal-lang', code); } catch (e) {}
+  }
+
+  buttons.forEach(function (b) {
+    b.addEventListener('click', function () { show(b.dataset.set); });
+  });
+
+  // Reihenfolge: was zuletzt gewaehlt wurde, sonst die Sprache des Browsers,
+  // sonst Deutsch.
+  var saved = null;
+  try { saved = localStorage.getItem('legal-lang'); } catch (e) {}
+  var browser = (navigator.language || 'de').slice(0, 2);
+  show(saved === 'en' || saved === 'de' ? saved : browser === 'en' ? 'en' : 'de');
+</script>
+</body>
+</html>
